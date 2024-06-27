@@ -5,13 +5,13 @@ A tool that consolidates the most commonly used settings for baking in Blender t
 ### Simple Bake button
 Change settings and execute the bake, reducing mistakes.
 ### Bake Type Selection
-Focuses on the most frequently used bake types
+Allows you to select only the most frequently used types (Emit, Normal, Shadow, and AO)
 ### Sample size setting
 Set the number of samples to be baked with a single click.
 ### Auto save function
-Allows the user to choose whether or not to automatically save the baked image.
+Choose whether or not to automatically save the baked image
 ### UV Settings
-Allows you to set the UV channel for baking, with the option to restore the original UV channel after baking.
+Set the UV channel for baking and have the option to restore the original UV channel after baking
 ### Texture Management
 Add new textures with a single click or delete unwanted images.
 
