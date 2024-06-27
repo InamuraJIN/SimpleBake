@@ -1,3 +1,20 @@
+# INTRODUCTION
+A tool that consolidates the most commonly used settings for baking in Blender to reduce errors in your work
+
+## Main functions
+### Simple Bake button
+Change settings and execute the bake, reducing mistakes.
+### Bake Type Selection
+Allows you to select only the most frequently used types (Emit, Normal, Shadow, and AO)
+### Sample size setting
+Set the number of samples to be baked with a single click.
+### Auto save function
+Choose whether or not to automatically save the baked image
+### UV Settings
+Set the UV channel for baking and have the option to restore the original UV channel after baking
+### Texture Management
+Add new textures with a single click or delete unwanted images.
+
 # Install
 
 ![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/accd6f34-5e23-4259-bbf5-224541eb8a7f)
@@ -34,6 +51,7 @@ Bake Type: Selects the type of baking
 ## Texture Manager
 Add: adds a texture to the selected object's material
 └ Remove: Deletes a texture in the Blend data
+
 ![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/c846939b-18ba-4f38-bf15-9d979dd623e3)
 
 ## Add Textures pop-up panel
