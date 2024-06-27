@@ -1,3 +1,22 @@
+# INTRODUCTION
+A tool that consolidates the most commonly used settings for baking in Blender to reduce errors in your work
+
+## Main functions
+### Simple Bake button
+Change settings and execute the bake, reducing mistakes.
+### Bake Type Selection
+Focuses on the most frequently used bake types
+### Sample size setting
+Set the number of samples to be baked with a single click.
+### Auto save function
+Allows the user to choose whether or not to automatically save the baked image.
+### UV Settings
+Allows you to set the UV channel for baking, with the option to restore the original UV channel after baking.
+### Texture Management
+Add new textures with a single click or delete unwanted images.
+
+Translated with www.DeepL.com/Translator (free version)
+
 # Install
 
 ![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/accd6f34-5e23-4259-bbf5-224541eb8a7f)
