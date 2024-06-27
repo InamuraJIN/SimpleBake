@@ -4,7 +4,7 @@ bl_info = {
     "category": "Render",
     "location": "Properties > Render",
     "author": "InamuraJIN",
-    "version": (2, 1),
+    "version": (2, 2),
 }
 
 import bpy
