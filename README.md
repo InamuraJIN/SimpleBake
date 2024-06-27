@@ -53,6 +53,7 @@ Bake Type: Selects the type of baking
 ## Texture Manager
 Add: adds a texture to the selected object's material
 └ Remove: Deletes a texture in the Blend data
+
 ![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/c846939b-18ba-4f38-bf15-9d979dd623e3)
 
 ## Add Textures pop-up panel
