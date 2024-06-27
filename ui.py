@@ -46,9 +46,9 @@ class BakeSettingsPanel(bpy.types.Panel):
         col.label(text="Samples")
         row = col.row(align=True)
         row.prop(scene, "simple_bake_samples", expand=True)
-
-        # Denoise チェックボックス
-        col.prop(scene, "simple_bake_denoise", text="Denoise")
+        
+        # Return to Render Samples チェックボックス
+        col.prop(scene, "simple_bake_return_to_render_samples", text="Return to Render Samples")
 
 
 class TextureManagerPanel(bpy.types.Panel):

@@ -4,7 +4,7 @@ bl_info = {
     "category": "Render",
     "location": "Properties > Render",
     "author": "InamuraJIN",
-    "version": (2, 2),
+    "version": (2, 1),
 }
 
 import bpy
@@ -65,6 +65,13 @@ def register():
         default=False
     )
 
+    # Render Samplesを元に戻すプロパティを定義
+    bpy.types.Scene.simple_bake_return_to_render_samples = bpy.props.BoolProperty(
+        name="Return to Render Samples",
+        description="Return to the original Render Samples after baking",
+        default=True
+    )
+
 
 def unregister():
     ui.unregister()
@@ -77,6 +84,7 @@ def unregister():
     del bpy.types.Scene.simple_bake_return_to_original_uv
     del bpy.types.Scene.simple_bake_type
     del bpy.types.Scene.simple_bake_auto_save
+    del bpy.types.Scene.simple_bake_return_to_render_samples
 
 
 if __name__ == "__main__":
