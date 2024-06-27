@@ -46,7 +46,7 @@ Bake Type: Selects the type of baking
 ├ Set Bake UV: Sets the UV channel to be used for baking
 ├ Return to Selected UV: Returns to the selected UV channel
 ├ Samples: Sets the number of samples used for baking
-└ Denoise: Enables denoise processing.
+└ Return to Render Samples: Resets the Render Max Sample number back to its original value when the bake is complete
 
 ## Texture Manager
 Add: adds a texture to the selected object's material
