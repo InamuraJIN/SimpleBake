@@ -35,7 +35,9 @@ The Simple Bake panel appears in Render Property
 Open the Bake Settings and Texture Manager sub-panels and various buttons will appear
 
 ## Simple Bake
-Performs a bake on the active selected object
+Simple Bake: Performs a bake on the active selected object
+
+Bake to: It shows which texture to bake to. This is not a button
 
 Auto Save: Automatically saves the image after baking is complete
     (Only files that have been saved locally will be saved)
