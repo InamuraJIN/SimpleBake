@@ -4,6 +4,18 @@ class SimpleBakeOperator(bpy.types.Operator):
     bl_idname = "object.simple_bake_operator"
     bl_label = "Simple Bake Operator"
 
+    @classmethod
+    def poll(cls, context):
+        obj = context.active_object
+        if obj and obj.type == 'MESH':
+            if obj.material_slots:
+                for mat_slot in obj.material_slots:
+                    if mat_slot.material and mat_slot.material.use_nodes:
+                        active_node = cls.get_active_image_node(context, mat_slot.material.node_tree)
+                        if active_node and active_node.type == 'TEX_IMAGE':
+                            return True
+        return False
+
     def execute(self, context):
         scene = context.scene
         uv_channel = scene.simple_bake_uv_channel
@@ -83,6 +95,15 @@ class SimpleBakeOperator(bpy.types.Operator):
 
         self.report({'INFO'}, "Bake completed")
         return {'FINISHED'}
+
+    @classmethod
+    def get_active_image_node(cls, context, node_tree):
+        for area in context.screen.areas:
+            if area.type == 'NODE_EDITOR':
+                for space in area.spaces:
+                    if space.type == 'NODE_EDITOR' and space.node_tree == node_tree:
+                        return space.node_tree.nodes.active
+        return None
 
 
 def register():
