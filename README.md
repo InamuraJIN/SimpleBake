@@ -1,5 +1,5 @@
 # INTRODUCTION
-A tool that consolidates the most commonly used settings for baking in Blender to reduce errors in your work
+It is a tool that integrates and automates the most commonly used settings in Blender Baking to reduce errors in the process
 
 ## Main functions
 ### Simple Bake button
@@ -29,12 +29,13 @@ Enable the Simple Bake add-on
 
 # HOW TO USE
 
-![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/3c5d1367-ae78-4d99-bb1d-1a7f30db81c3)
+![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/f10526a0-9e0e-4b48-9199-4bb37d829cce)
 
 The Simple Bake panel appears in Render Property
 Open the Bake Settings and Texture Manager sub-panels and various buttons will appear
 
-## Simple Bake: Performs a bake on the active selected object
+## Simple Bake
+Performs a bake on the active selected object
 
 Auto Save: Automatically saves the image after baking is complete
     (Only files that have been saved locally will be saved)
@@ -42,14 +43,14 @@ Auto Save: Automatically saves the image after baking is complete
 Bake Type: Selects the type of baking
 		(Emit, Normal, Shadow, AO(Ambient Occlusion))
 
-## Bake Settings
-├ Set Bake UV: Sets the UV channel to be used for baking
-├ Return to Selected UV: Returns to the selected UV channel
-├ Samples: Sets the number of samples used for baking
-└ Return to Render Samples: Resets the Render Max Sample number back to its original value when the bake is complete
+### Bake Settings
+├ Set Bake UV: Sets the UV channel to be used for baking  
+├ Return to Selected UV: Returns to the selected UV channel  
+├ Samples: Sets the number of samples used for baking  
+└ Return to Render Samples: Resets the Render Max Sample number back to its original value when the bake is complete  
 
-## Texture Manager
-Add: adds a texture to the selected object's material
+### Texture Manager
+├ Add: adds a texture to the selected object's material  
 └ Remove: Deletes a texture in the Blend data
 
 ![image](https://github.com/InamuraJIN/SimpleBake/assets/60126349/c846939b-18ba-4f38-bf15-9d979dd623e3)
