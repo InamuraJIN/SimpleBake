@@ -21,7 +21,7 @@ class SimpleBakePanel(bpy.types.Panel):
         row = layout.row()
         message, texture_name = self.get_bake_message(context)
         row.label(text=message)
-        row.prop(scene, "dummy_bake_texture_button", text=texture_name if texture_name else "Not Selected", toggle=True)
+        row.operator("object.dummy_operator", text=texture_name if texture_name else "Not Selected", depress=True)
 
         # Auto Save チェックボックス
         row = layout.row()
@@ -73,6 +73,12 @@ class SimpleBakePanel(bpy.types.Panel):
         cleaned_name = re.sub(r"\..*$", "", cleaned_name)
         return cleaned_name
 
+class DummyOperator(bpy.types.Operator):
+    bl_idname = "object.dummy_operator"
+    bl_label = "Dummy Operator"
+
+    def execute(self, context):
+        return {'FINISHED'}
 
 class BakeSettingsPanel(bpy.types.Panel):
     bl_label = "Bake Settings"
@@ -119,14 +125,14 @@ class TextureManagerPanel(bpy.types.Panel):
 
 
 def register():
-    bpy.types.Scene.dummy_bake_texture_button = bpy.props.BoolProperty(name="DummyBakeTextureButton", default=True)
     bpy.utils.register_class(SimpleBakePanel)
     bpy.utils.register_class(BakeSettingsPanel)
     bpy.utils.register_class(TextureManagerPanel)
+    bpy.utils.register_class(DummyOperator)
 
 
 def unregister():
-    del bpy.types.Scene.dummy_bake_texture_button
     bpy.utils.unregister_class(SimpleBakePanel)
     bpy.utils.unregister_class(BakeSettingsPanel)
     bpy.utils.unregister_class(TextureManagerPanel)
+    bpy.utils.unregister_class(DummyOperator)
