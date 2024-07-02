@@ -3,17 +3,17 @@ It is a tool that integrates and automates the most commonly used settings in Bl
 
 ## Main functions
 ### Simple Bake button
-Change settings and execute the bake, reducing mistakes.
+Automatically changes each setting and executes the bake
 ### Bake Type Selection
 Allows you to select only the most frequently used types (Emit, Normal, Shadow, and AO)
 ### Sample size setting
-Set the number of samples to be baked with a single click.
+Set the number of samples to be baked with a single click
 ### Auto save function
 Choose whether or not to automatically save the baked image
 ### UV Settings
 Set the UV channel for baking and have the option to restore the original UV channel after baking
 ### Texture Management
-Add new textures with a single click or delete unwanted images.
+Add new textures with a single click or delete unwanted images
 
 # Install
 
